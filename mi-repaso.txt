@@ -10,6 +10,17 @@ git init --> inicializa el repositorio git.
 
 git add <nombre-del-archivo>  --> comienza a hacer seguimiento a un archivo en cuestion 
 
-git commit -m <mensaje>
+git commit -m <mensaje>  --> envia los ultimos cambios del archivo a la base de datos del sistema de control de 
+versiones. 
+
+git add . --> esta es otra forma de agregar archivos. este comando agrega todos los archivos que hayan cambiado
+en el escenario.
+
+git status --> me permite saber que archivos y cuales no fueron agregado al escenario
+
+git show --> mostrara todos los cambios que hemos hecho, esto incluye las lineas que hemos cambiado
+cuando y quien hizo dichos cambios.
+
+git log <archivo>  --> para ver la historia completa de un archivo.
 
 
