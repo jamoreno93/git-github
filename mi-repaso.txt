@@ -1,0 +1,15 @@
+miercoles, 12 de mayo de 2021
+
+inciare el dia de hoy con mi repaso de git y github del curso de platzi.
+
+se explican que es git : es un sistema de control de versiones.
+
+primeros comandos 
+
+git init --> inicializa el repositorio git.
+
+git add <nombre-del-archivo>  --> comienza a hacer seguimiento a un archivo en cuestion 
+
+git commit -m <mensaje>
+
+
