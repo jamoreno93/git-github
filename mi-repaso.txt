@@ -21,6 +21,11 @@ git status --> me permite saber que archivos y cuales no fueron agregado al esce
 git show --> mostrara todos los cambios que hemos hecho, esto incluye las lineas que hemos cambiado
 cuando y quien hizo dichos cambios.
 
-git log <archivo>  --> para ver la historia completa de un archivo.
+git log <archivo>  --> para ver la historia completa de un archivo. los commits tiene id.
+
+git diff ab123346534233  berwesc123421 --> si queremos ver la diferencia entre una version
+y otra, no necesariamente todos los cambios desde la creacion del archivo.
+
+
 
 
