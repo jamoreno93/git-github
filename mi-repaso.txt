@@ -73,3 +73,5 @@ para las dos ramas los archivo arrancan en version original.
 
 Cuando se ejecuta un merge entre las ramas development y master la rama development desaparece.
 
+realizaremos un merge, pero desde la rama master, por ende nos debemos mover a esa rama,
+
