@@ -26,6 +26,35 @@ git log <archivo>  --> para ver la historia completa de un archivo. los commits 
 git diff ab123346534233  berwesc123421 --> si queremos ver la diferencia entre una version
 y otra, no necesariamente todos los cambios desde la creacion del archivo.
 
+git reset ASDASDFQDEAFW --hard --> regresa a la version denotada y elmina lo que este
+en stagging.
+
+git log --stat --> se podra ver los cambios especificos de cada uno de los archivos.
+
+git checkout aASDASDEasa file.txt -->me permite volver a una version anterior el archvio
+pero puede eliminar la version actual del archivo.
+
+git checkout master file.txt  --> me permite volver a la version actual del archivo
+cuando he hecho un checkout para volver a otro.
+
+git rm --> elimina archivos de git sin eliminar su historia del sistema de versiones.
+se puede recuperar el ultimo commit.
+
+git rm --cached --> elimina los archivos del aerea staging y del proximo commit pero
+los mantiene en el disco duro.
+
+git rm --force --> elimina los archivos de GIT y del disco duro.
+
+git reset --> volvemos a una version pasada sin la posibilidad de volver al futuro.
+borramos la historia y la debemos sobreescribir. no hay vuelta atras.
+
+git reset --soft --> borramos todo el historial y los registros de git pero guardamos
+ los cambios que tengamos en staging, asi podemos aplicar las ultimas actualizaciones.
+
+git reset --hard --> borra todo. TODO.
+
+git reset HEAD --> comando para sacar archivos del area staging. no para borrarlos  ni nada
+los ultimos cambios de estos archivos no se envien al ultimo commit. 
 
 
 
