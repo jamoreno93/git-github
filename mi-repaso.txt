@@ -55,6 +55,15 @@ git reset --hard --> borra todo. TODO.
 
 git reset HEAD --> comando para sacar archivos del area staging. no para borrarlos  ni nada
 los ultimos cambios de estos archivos no se envien al ultimo commit. 
+___________________________________________________________________________________________
+Sabado 15 de mayo.
 
+se inicia con el concepto de ramas o branches
+
+git branch <nombre de la rama>  -->se crea una rama desde el ultima commit del archivo.
+
+git checkout <nombre de la rama> --> se establece la rama como lugar de trabajo.
+
+git status --> verificamos que si nos encontremos en la rama.
 
 
