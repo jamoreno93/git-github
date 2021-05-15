@@ -68,3 +68,8 @@ git status --> verificamos que si nos encontremos en la rama.
 
 se ha creado la rama development y la rama hotfix para este archivo 
 para las dos ramas los archivo arrancan en version original.
+
+		FUSION DE RAMAS CON GIT MERGE.
+
+Cuando se ejecuta un merge entre las ramas development y master la rama development desaparece.
+
