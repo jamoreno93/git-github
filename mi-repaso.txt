@@ -66,4 +66,5 @@ git checkout <nombre de la rama> --> se establece la rama como lugar de trabajo.
 
 git status --> verificamos que si nos encontremos en la rama.
 
-
+se ha creado la rama development y la rama hotfix para este archivo 
+para las dos ramas los archivo arrancan en version original.
