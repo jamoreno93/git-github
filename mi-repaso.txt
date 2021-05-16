@@ -56,7 +56,7 @@ git reset --hard --> borra todo. TODO.
 git reset HEAD --> comando para sacar archivos del area staging. no para borrarlos  ni nada
 los ultimos cambios de estos archivos no se envien al ultimo commit. 
 ___________________________________________________________________________________________
-Sabado 15 de mayo.
+2021 Sabado 15 de mayo.
 
 se inicia con el concepto de ramas o branches
 
@@ -74,4 +74,36 @@ para las dos ramas los archivo arrancan en version original.
 Cuando se ejecuta un merge entre las ramas development y master la rama development desaparece.
 
 realizaremos un merge, pero desde la rama master, por ende nos debemos mover a esa rama,
+
+-------------------------------------------------------------------------------------------
+2021 domingo 16 de mayo.
+
+se realizo la conexion con el servidor de red de github, haciendo uso de conexiones por ssh
+
+los apuntes importantes son:
+
+git remote add origin <https:url> establece un origen remoto del repositorio remoto pra gestio
+nar el proyecto mediante HTTPS.
+
+git remote -v   verifica la existencia del origen remoto
+
+git config -l	permite ver los parametros de configuracion
+
+git push origin master	fusiona una copia del master local con el remoto
+
+git pull origin master	fusiona una copia del master remoto con el local
+
+git remote set-url origin <ssh-url>	configura git para conecta con el repositorio remoto a
+traves de SSH
+
+		SSH: generacion de claves publicas y privadas
+
+
+ssh-keygen -t rsa -b 4096 -C "youremail@example.com"	generacion de claves de cifrado publica y privada
+
+eval $(ssh-agent -s)	comprueba si el servicio de cifrado esta activo.
+
+ssh-add <ruta-id_rsa>	informa al sistema de la ubicacion del archivo que contiene la llave privada.
+
+antes de hacer estre proceso hay que proporcionarle a git hub nuestra clave publica.
 
