@@ -1,1 +1,120 @@
+miercoles, 12 de mayo de 2021
 
+inciare el dia de hoy con mi repaso de git y github del curso de platzi.
+
+se explican que es git : es un sistema de control de versiones.
+
+primeros comandos 
+
+git init --> inicializa el repositorio git.
+
+git add <nombre-del-archivo>  --> comienza a hacer seguimiento a un archivo en cuestion 
+
+git commit -m <mensaje>  --> envia los ultimos cambios del archivo a la base de datos del sistema de control de 
+versiones. 
+
+git add . --> esta es otra forma de agregar archivos. este comando agrega todos los archivos que hayan cambiado
+en el escenario.
+
+git status --> me permite saber que archivos y cuales no fueron agregado al escenario
+
+git show --> mostrara todos los cambios que hemos hecho, esto incluye las lineas que hemos cambiado
+cuando y quien hizo dichos cambios.
+
+git log <archivo>  --> para ver la historia completa de un archivo. los commits tiene id.
+
+git diff ab123346534233  berwesc123421 --> si queremos ver la diferencia entre una version
+y otra, no necesariamente todos los cambios desde la creacion del archivo.
+
+git reset ASDASDFQDEAFW --hard --> regresa a la version denotada y elmina lo que este
+en stagging.
+
+git log --stat --> se podra ver los cambios especificos de cada uno de los archivos.
+
+git checkout aASDASDEasa file.txt -->me permite volver a una version anterior el archvio
+pero puede eliminar la version actual del archivo.
+
+git checkout master file.txt  --> me permite volver a la version actual del archivo
+cuando he hecho un checkout para volver a otro.
+
+git rm --> elimina archivos de git sin eliminar su historia del sistema de versiones.
+se puede recuperar el ultimo commit.
+
+git rm --cached --> elimina los archivos del aerea staging y del proximo commit pero
+los mantiene en el disco duro.
+
+git rm --force --> elimina los archivos de GIT y del disco duro.
+
+git reset --> volvemos a una version pasada sin la posibilidad de volver al futuro.
+borramos la historia y la debemos sobreescribir. no hay vuelta atras.
+
+git reset --soft --> borramos todo el historial y los registros de git pero guardamos
+ los cambios que tengamos en staging, asi podemos aplicar las ultimas actualizaciones.
+
+git reset --hard --> borra todo. TODO.
+
+git reset HEAD --> comando para sacar archivos del area staging. no para borrarlos  ni nada
+los ultimos cambios de estos archivos no se envien al ultimo commit. 
+___________________________________________________________________________________________
+2021 Sabado 15 de mayo.
+
+se inicia con el concepto de ramas o branches
+
+git branch <nombre de la rama>  -->se crea una rama desde el ultima commit del archivo.
+
+git checkout <nombre de la rama> --> se establece la rama como lugar de trabajo.
+
+git status --> verificamos que si nos encontremos en la rama.
+
+se ha creado la rama development y la rama hotfix para este archivo 
+para las dos ramas los archivo arrancan en version original.
+
+		FUSION DE RAMAS CON GIT MERGE.
+
+Cuando se ejecuta un merge entre las ramas development y master la rama development desaparece.
+
+realizaremos un merge, pero desde la rama master, por ende nos debemos mover a esa rama,
+
+-------------------------------------------------------------------------------------------
+2021 domingo 16 de mayo.
+
+se realizo la conexion con el servidor de red de github, haciendo uso de conexiones por ssh
+
+los apuntes importantes son:
+
+git remote add origin <https:url> establece un origen remoto del repositorio remoto pra gestio
+nar el proyecto mediante HTTPS.
+
+git remote -v   verifica la existencia del origen remoto
+
+git config -l	permite ver los parametros de configuracion
+
+git push origin master	fusiona una copia del master local con el remoto
+
+git pull origin master	fusiona una copia del master remoto con el local
+
+git remote set-url origin <ssh-url>	configura git para conecta con el repositorio remoto a
+traves de SSH
+
+		SSH: generacion de claves publicas y privadas
+
+
+ssh-keygen -t rsa -b 4096 -C "youremail@example.com"	generacion de claves de cifrado publica y privada
+
+eval $(ssh-agent -s)	comprueba si el servicio de cifrado esta activo.
+
+ssh-add <ruta-id_rsa>	informa al sistema de la ubicacion del archivo que contiene la llave privada.
+
+antes de hacer estre proceso hay que proporcionarle a git hub nuestra clave publica.
+
+--------------------------------------------------------------------------------------------------
+sabado 22 de mayo de 2021
+
+realice el cambio de rama MASTER a rama MAIN:
+	git branch main; cree la rama main
+ 	git checkout main; mover a la rama main para trabajar sobre la rama.
+	sudo nano mi-respaso.txt; modifique el archivo de trabajo.
+	git add mi-repaso.txt; agregue el archivo a la rama main.
+	git commit -m "Rev.original"; realice el primer commit a la rama main.
+	git pull; realice un pull para no tener conflictos.
+	git push origin main; subi la rama main a git hub.
